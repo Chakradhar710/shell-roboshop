@@ -32,6 +32,7 @@ VALIDATE(){
     fi
 }
 
+
 dnf module disable nginx -y &>>$LOGS_FLODER
 VALIDATE $? "Disabling Default Nginx"
 
