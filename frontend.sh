@@ -33,7 +33,7 @@ VALIDATE(){
 }
 
 
-dnf module disable nginx -y &>>$LOGS_FLODER
+dnf module disable nginx -y  &>>$LOGS_FLODER
 VALIDATE $? "Disabling Default Nginx"
 
 dnf module enable nginx:1.24 -y &>>$LOGS_FLODER
