@@ -49,7 +49,7 @@ systemctl enable redis &>>$LOG_FILE
 VALIDATE $? "Enabling Redis"
 
 systemctl start redis &>>$LOG_FILE
-VALIDATE $? "Starting Redis"
+VALIDATE $? "Starting redis"
 
 END_TIME=(date +%s)
 TOTAL_TIME=$(( $END_TIME - $START_TIME ))
